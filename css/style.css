@@ -64,6 +64,7 @@
     display: inline;
     padding:20px;
     font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 .ancor{
     text-decoration: none;
@@ -101,7 +102,7 @@
 }
 .header-info .ancor:hover{
     color: #c27c8c;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .colortext{
