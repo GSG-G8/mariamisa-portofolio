@@ -8,19 +8,21 @@
 
 
  .navbar{
-    background-color:rgba(3, 3, 3, .6);
+    background-color:rgba(3, 3, 3, .4);
     color: white;
     width: 100%;
-    padding: 50px;
+    padding: 30px;
     box-sizing: border-box;
- 
+    position: fixed;
+    top: ;
+
    
 }
 
 .background::after {
     content: "";
     background: url(../img/55.jpg) no-repeat ;
-    background-size: 100% 940px;
+    background-size: 100% 900px;
     max-height: 940;
     opacity: 0.4;
     top: 0;
@@ -32,25 +34,29 @@
   }
 
 .container{
-    width: 90%;
+    width: 80%;
     margin: auto;
 
 }
 .logo{
-    float: left;
-    width: 20%;
-    padding-top: 30px;
     color: white;
     letter-spacing: 2px;
+    display: inline;  
     
+
+}
+.logo h1{
+   width: 50%;
+   font-size: 2rem;
 
 }
 .navbar ul{
     float: right;
-    width: 70%;
+    width: 80%;
      list-style: none;
     text-align: right;
-    margin-top: -10px;
+    margin-top: -26px;
+
 
    
 }
@@ -75,7 +81,7 @@
     clear: both;
 }
 .header-info{
-    padding: 360px 20%;
+    padding: 390px 20%;
     color: white;
     text-align: center;
     background-color: rgba(3, 3, 3, .6);
@@ -85,13 +91,16 @@
     padding-top: 10px;
 }
 .header-info .ancor{
-    background-color: rgba(4, 4, 4, .4);
+    background-color:none;
     margin:40px auto;
     padding: 20px 40px;
+    border: 2px solid white;
     border-radius: 50px;
     text-decoration: none;
+    color: white;
 }
 .header-info .ancor:hover{
+    color: #c27c8c;
     letter-spacing: 3px;
 }
 
@@ -122,46 +131,50 @@
     }
     .navbar{
         background-color: rgba(3, 3, 3,.8);
+        padding-bottom: 10px;
     }
     .header-info{
-        padding-top:40px ;
         padding-bottom: 50px;
         color:#222 ;
         background-color:#eee;
+        font-size: .7rem;
     }
     
     .navbar ul {
        float: none;
        width: 100%;
-       margin-top: 30px;
+       margin-top: 0px;
+       box-sizing: border-box;
   
     }
     .list-item{
         display: block;
         font-size: 1rem;
+        border: 1px solid #c27c8c;
     }
     .list-item:hover{
        background-color: #c27c8c;
        color: #333;
        font-weight: bold;
     }
-    .navbar{
-        padding: 10px;
-       
-    }
+    
+   
     .logo{
-    font-size: 0.8rem;
+    font-size: .9rem;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 50px;
     padding-top: 30px;
     color: white;
     
     }
+    .ancor:hover{
+        text-decoration: none;
+    }
    
-    /* .background::after {
+    .background::after {
         content: "";
         background: url(../img/55.jpg) no-repeat ;
-        background-size: 100% 200px;
+        background-size: 100% 50%;
         opacity: 0.4;
         top: 0;
         left: 0;
@@ -169,7 +182,17 @@
         right: 0;
         position: absolute;
         z-index: -1;   
-      } */
+      }
+      .header-info p{
+        margin-top: 10px;
+        margin-bottom: 20px;
 
+      }
+      .header-info .ancor{
+        padding: 10px 10px;
+        border: 2px solid #222;
+        color: #222;
+        margin-top: 20px;
+    }
     
  }
