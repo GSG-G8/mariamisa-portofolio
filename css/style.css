@@ -18,10 +18,9 @@
 
 .background::after {
     content: "";
-    background: url(../img/55.jpg) no-repeat ;
-    background-size: 100% 900px;
+    background: url(../img/22.jpg) no-repeat ;
     max-height: 940;
-    opacity: 0.4;
+    background-size: cover;
     top: 0;
     left: 0;
     bottom: 0;
@@ -71,9 +70,8 @@
 }
 .header-info{
     padding: 390px 20%;
-    color: white;
+    color: #333;
     text-align: center;
-    background-color: rgba(2, 2, 3, .6);
 
 }
 .header-info p{
@@ -83,14 +81,15 @@
     background-color:none;
     margin:40px auto;
     padding: 20px 40px;
-    border: 2px solid white;
+    border: 2px solid #333;
     border-radius: 50px;
     text-decoration: none;
-    color: white;
+    color:#333;
 }
 .header-info .ancor:hover{
-    color: #c27c8c;
-    letter-spacing: 1px;
+    color:white;
+    background-color: #333;
+    font-weight: bold;
 }
 
 .colortext{
@@ -224,7 +223,7 @@
   .contact{
       width: 50%;
       padding: 50px;
-      padding-left:200px;
+
   }
   .contact-form{
       padding: 50px;
@@ -283,6 +282,8 @@
 
 
 }
+
+
   
 
     h1{
@@ -293,17 +294,33 @@
 
 
 @media  (max-width: 1200px) {
-    .about-me{
-        width: 80%;
-        margin:50px auto;
-    
-    
+    *{
+        overflow: hidden;
     }
+    .background::after {
+        content: "";
+        background-image: none ;
+        background-color: white;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      }
+   
+  
     .about-info{
         width: 80%;
         margin: auto;
         padding: 20px;
      
+    }
+    .header-info{
+        padding-top: 150px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     }
     .container{
         width: 80%;
@@ -321,12 +338,76 @@
         flex: 1 40%;
         margin: 20px;
      }
-    
+     #contact-section{
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .contact{
+        box-sizing: border-box;
+        order: 2;
+        width: 100%;
+        padding:20px ;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .contact-form{
+        order: 1;
+        padding: 20px;
+        width: 100%;
+        color: #333;
+        background-color: white;
+    }
+    .form-header{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .list2{
+    margin-top: -15px;
+    font-size: .7rem;
+    width: 80%;
+
+    }
+ 
+
+    .contact-form input,.message{
+        border: 1px solid #333;
+        width: 80%;
+    }
+    .message{
+        max-width: 80%;
+        min-width: 80%;
+        max-height: 100px;
+        min-height: 40px;
+    }
+    .sendbtn{
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 20px;
+        color: white;
+        border:2px solid white;
+        background-color:#333;
+    }
+ 
+    .sendbtn:hover{
+        background-color: #c27c8c;
+        border-color: #c27c8c;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    .header-info{
+        background-color:#eee;}
 }
 
 
 
+
 @media  (max-width: 840px) {
+    *{
+        overflow: hidden;
+    }
     body{
         background-color:white;
         overflow: hidden;
@@ -382,18 +463,7 @@
         text-decoration: none;
     }
    
-    .background::after {
-        content: "";
-        background: url(../img/55.jpg) no-repeat ;
-        background-size: 100% 50%;
-        opacity: 0.4;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;   
-      }
+    
       .header-info p{
           font-size: 1rem;
         margin-top: 10px;
@@ -419,8 +489,11 @@
         width: 80%;
         margin: auto;
         padding: 20px;
+        margin-bottom: 20px;
      
     }
+
+
     .social-icon{
         font-size: .2em;
     }
@@ -445,9 +518,23 @@
         margin-top: 5px;
      }
      .port-header {
+ 
         margin-bottom: 20px;
         font-size: 1.5rem;
     }
+    .copyr{
+        display: none;
+
+    
+    
+    }
+    footer .fa{
+
+        font-size: .8rem;
+        padding:10px 0px 0px 0px;
+    }
+
+  
    
 
 
