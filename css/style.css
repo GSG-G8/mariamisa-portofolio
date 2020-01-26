@@ -38,6 +38,7 @@
     color: white;
     letter-spacing: 2px;
     display: inline;  
+    font-size: 1.7rem;
 }
 .list{
     float: right;
@@ -74,7 +75,7 @@
     text-align: center;
 
 }
-.header-info p{
+.section__header-p{
     padding-top: 10px;
 }
 .header-info .ancor{
@@ -100,6 +101,7 @@
     width: 80%;
     margin:50px auto;
     text-align: center;
+
 }
 .about-info{
     width: 50%;
@@ -174,6 +176,8 @@
     padding-top: 30px;
     font-size: 2rem;
 }
+
+   
   .port-folio{
      width: 20%;
      text-align: center;
@@ -183,7 +187,7 @@
   .img-port{
       width: 100%;
   }
-  .img-port img{
+  .section__img{
       width: 100%;
       height: 200px;
       padding: 10px;
@@ -282,13 +286,12 @@
 
 
 }
+.section__about-header{
+    font-size: 2rem;
+    padding-top: 50px;
+}
 
 
-  
-
-    h1{
-        font-size: 2rem;
-    }
 
       
 
@@ -314,6 +317,7 @@
         width: 80%;
         margin: auto;
         padding: 20px;
+        margin-bottom: 20px;
      
     }
     .header-info{
@@ -403,7 +407,6 @@
 
 
 
-
 @media  (max-width: 840px) {
     *{
         overflow: hidden;
@@ -482,7 +485,9 @@
     .about-me{
         width: 100%;
         margin:50px auto;
-    
+
+
+        
     
     }
     .about-info{
@@ -490,6 +495,7 @@
         margin: auto;
         padding: 20px;
         margin-bottom: 20px;
+     
      
     }
 
@@ -521,6 +527,11 @@
  
         margin-bottom: 20px;
         font-size: 1.5rem;
+    }
+
+    .section__about-header{
+        font-size: 1.5rem;
+        padding-top: 0px;
     }
     .copyr{
         display: none;

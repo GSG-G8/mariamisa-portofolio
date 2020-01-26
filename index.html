@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main>
     <header id="header">
         <!-- background imd for header -->
         <div class="background"></div> 
@@ -16,22 +17,22 @@
                     <div class="logo">
                         <h1><spam class="colortext">M</spam>ariam</h1>
                     </div>
-                <ul class="list">
-                    <a class="ancor" href="#header"><li class="list-item">Home</li></a>
-                    <a class="ancor" href="#about-section"><li class="list-item">About Me</li></a>
-                    <a class="ancor" href="#portfolio-section"><li class="list-item">Portfolio</li></a>
-                    <a class="ancor" href="#contact-section"><li class="list-item">Contact Me</li></a>
-                </ul>
+                    <ul class="list">
+                        <a class="ancor" href="#header"><li class="list-item">Home</li></a>
+                        <a class="ancor" href="#about-section"><li class="list-item">About Me</li></a>
+                        <a class="ancor" href="#portfolio-section"><li class="list-item">Portfolio</li></a>
+                        <a class="ancor" href="#contact-section"><li class="list-item">Contact Me</li></a>
+                    </ul>
               </div>
           </nav>
-          <div class="header-info cl">
-            <h1>Welcome On My Portfolio Web Site</h1>
-            <p>you can see informaion about me & Portfolio</p><br><br>
+          <section class="header-info cl">
+            <h1 class="section__header-h">Welcome On My Portfolio Web Site</h1>
+            <p class="section__header-p">you can see informaion about me & Portfolio</p><br><br>
             <a class="ancor contact" href="#contact-section">Contact Me</a>
-          </div>
+          </section>
     </header>
     <section id="about-section"  class="about-me">
-        <h1 class="port-header">About Me</h1><br><br>
+        <h1 class="section__about-header">About Me</h1><br><br>
         <div class="about-info">
           <img class="p-img" src="img/me.png" alt="pesonal img">
           <h1 class="text-about">Mariam Isa</h1>
@@ -53,36 +54,36 @@
            <h1 class="port-header">Portfolio</h1>
            <div class="port-cont">
                  <div class="port-folio">
-                        <div class="img-port"><img  alt="port img" src="img/33.jpg"></div>
+                        <div class="img-port"><img class="section__img" alt="port img" src="img/33.jpg"></div>
                         <a href="#" class="port-ancor">show website</a>
                     </div>
                     <div class="port-folio">
-                        <div class="img-port"><img alt="port img" src="img/55.jpg"></div>
+                        <div class="img-port"><img class="section__img" alt="port img" src="img/55.jpg"></div>
                         <a href="#" class="port-ancor">show website</a>
                     </div>
                     <div class="port-folio">
-                         <div class="img-port"><img  alt="port img" src="img/33.jpg"></div>
+                         <div class="img-port"><img class="section__img" alt="port img" src="img/33.jpg"></div>
                          <a href="#" class="port-ancor">show website</a>
                     </div>
                     <div class="port-folio">
-                         <div class="img-port"><img  alt="port img" src="img/55.jpg"></div>
+                         <div class="img-port"><img class="section__img" alt="port img" src="img/55.jpg"></div>
                          <a href="#" class="port-ancor">show website</a>
                     </div>
-                 </div>
+                </div>
          </div>
          
     </section>
     
 
     <footer id="contact-section">
-        <div class="contact">
+        <section class="contact">
             <div class="container">
             <ul class="list2">
                 <li><span class="fa fa-envelope-o"></span> maryaam1998@hotmail.com</li>
                 <li><span class="fa fa-mobile-phone"></span> 0597180930</li>
                 <li><span class="fa fa-address-book-o"></span>Palestine-Gaza</li>
             </ul>
-        </div></div>
+        </div></section>
         <form class="contact-form">
             <div class="container">
                 <h1 class="form-header">Contact Me</h1><br>
@@ -97,10 +98,10 @@
             <button class="sendbtn" type="submit">SEND Message</button>
             </div>
         </form>
-        <span class="copyr">made by &copy; mariam </span>
+        <h4 class="copyr">made by &copy; mariam </h4>
     </footer>
 
-  
+</main> 
 </body>
 
 </html>
